@@ -1,0 +1,315 @@
+body {
+    width: 100vw;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    font-size: 1em;
+}
+
+#logo {
+    width: 5em;
+}
+
+
+/* HEADER STYLES*/
+
+/* STÖRRE SKÄRMAR */
+header {
+    display: flex;
+    /* Placerar elementen längst ut till varje kant */
+    align-items: center;
+    /* Centrerar vertikalt */
+    background-color: rgb(103, 196, 119);
+}
+
+.logo {
+    height: 2em;
+    width: 1.7em;
+    margin: 0.5em;
+}
+
+#logo-text {
+    color: black;
+    width: fit-content;
+    text-decoration: none;
+    margin-left: 1em;
+    width: 50%;
+}
+
+#open-menu {
+    display: none;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#bigScreenList {
+    display: flex;
+    width: 48%;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1em;
+}
+
+.menyLänkar {
+
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menyLänkar:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+
+/* MOBILLÄGE */
+@media screen and (max-width: 700px) {
+    header {
+        display: flex;
+        /* Placerar elementen längst ut till varje kant */
+        align-items: center;
+        /* Centrerar vertikalt */
+        background-color: rgb(103, 196, 119);
+    }
+
+    .logo {
+        height: 2em;
+        width: 1.7em;
+        margin: 0.5em;
+    }
+
+    #logo-text {
+        color: black;
+        width: fit-content;
+        text-decoration: none;
+        margin-left: 1em;
+    }
+
+    #bigScreenList {
+        display: none;
+    }
+
+    #open-menu {
+        display: flex;
+    }
+
+    nav {
+        background-color: rgb(103, 196, 119);
+        box-shadow: 0 0px 10px black;
+        font-size: 26px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        display: none;
+        z-index: 1000;
+        width: 50%;
+    }
+
+    nav ul {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav li {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav a:hover {
+        cursor: pointer;
+        color: white;
+    }
+
+    /*menyknapp för att öppna menyn*/
+
+    #open-menu {
+        margin-left: auto;
+    }
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        background-color: rgb(103, 196, 119);
+        border: solid black 2px;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+
+    .menu-btn .menu-text {
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 600;
+        line-height: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu-btn:hover {
+        box-shadow: 0 0px 5px black;
+    }
+
+    .menu-icon {
+        margin-right: 10Px;
+    }
+
+    .bars {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    .menu-text {
+        color: black;
+    }
+
+    /*menyknapp för stäng*/
+    .close {
+        padding: 10px 15px;
+    }
+
+    /*roterar två streck till ett kryss*/
+    .cross1 {
+        width: 25px;
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+    }
+
+    .cross2 {
+        width: 25px;
+        transform: rotate(135deg);
+        position: relative;
+        top: -3px;
+    }
+}
+
+
+
+
+
+
+/* MAIN STYLES */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main article {
+    width: 20em;
+}
+
+main section {
+    width: 20em;
+}
+
+main div {
+    width: 20em;
+}
+
+main h1 {
+    margin-bottom: 1%;
+}
+
+main p {
+    margin-top: 0%;
+}
+
+@media screen and (min-width: 1020px) {
+    main article {
+        width: 30em;
+    }
+    
+    main section {
+        width: 30em;
+    }
+    
+    main div {
+        width: 30em;
+    }
+
+}
+
+/* KNAPPAR */
+
+.btn {
+    color: white;
+    background-color: #3559E0;
+    width: 7.5em;
+    height: 2.5em;
+    border-radius: 7px;
+    border: 1px solid #3559E0;
+    font-size: 1.5em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 3px solid black
+}
+
+
+
+/* FOOTER STYLES */
+
+footer {
+    background-color: rgb(103, 196, 119);
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 2em;
+}
+
+footer p {
+    width: fit-content;
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: 600;
+}

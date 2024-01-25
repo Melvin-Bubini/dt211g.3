@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment-1 - DT211G - Skapande</title>
+    <link rel="stylesheet" href="/index.2cdaf7bc.css">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html"><img id="logo" src="/standardLogo.716e2659.svg" alt="Logga"></a>
+        <a id="logo-text" href="/index.html">
+            <h2>Moment-1</h2>
+        </a>
+        <ul id="bigScreenList">
+            <li><a class="menyLänkar" href="/index.html">Startsida</a></li>
+            <li><a class="menyLänkar" href="/bilder.html">Bilder</a></li>
+            <li><a class="menyLänkar" href="/skapande.html">Skapande</a></li>
+        </ul>
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <nav id="nav-menu">
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a href="/index.html">Startsida</a></li>
+                <li><a href="/bilder.html">Bilder</a></li>
+                <li><a href="/skapande.html">Skapande</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article>
+            <h1>Information om utveckling</h1>
+            <p>
+                Min arbetsprocess för denna uppgift var så att jag började med att skapa npm-projekt med "npm init".
+                Därefter så installerade jag parcel med "npm install parcel --dev-save". När den var nedladdad så la jag
+                min node_modeules i ett .gitignore fil som jag skapade i samband med det. Sedan gick jag in i
+                min package.json fil och skrev egna script och skrev till en source med index.html filen som start.
+                När jag hade skrivit klart min package.json fil så skapade jag en src mapp och i den mappen så
+                skapade jag en fil för html, css och javascript. Därefter så började skapandet av demowebbplatsen,
+                vilket
+                jag startade med att skapa en index.html fil. Under tiden som jag utvecklade webbplatsen så gjorde jag
+                regelbundna
+                commits till ett Github-repo som jag hade kopplat till denna uppgift. Det som är auotomatiserat för den
+                här webbplatsen är storleken och formatet som bilerna visas i. Bilderna är alla i jpeg-format och
+                olika storlekar. När de sedan visas på sidan är de istället alla i webp-format och i samma storlek.
+                Storleken på bilderna beror på skärmens storlek. Är skärmen större än 800px i bredd så visas bilderna
+                i 800px i bredd. Är skärmen större än 401px i bredd så visas bilderna i 400px i bredd. Den sista regeln 
+                är att om skärmen är mindre än 400px i bredd så visas bilderna i 200px i bredd. Slutligen, skulle en webbläsare 
+                inte klara av att visa någon av dessa bilder så finns det en bild som den faller tillbaka på och visar då.
+            </p>
+        </article>
+        <article>
+            <h1>Information om publiceringen</h1>
+            <p>
+                För att publicera uppgiften så använde jag mig av Netlify. Jag gick in på Netlify för att publicera
+                och väl där så använde jag Github för att publicera via den sidan. Jag valde då mitt repo som jag arbetat i
+                för att publicera det. Därefter så fick jag välja inställningar för publicering och jag valde då att använda
+                build command "npm run buil" och att publicera dist katalogen. Därefter så var webbsidan publicerad och klar.
+
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>@ Melvin Bubini, 2024</p>
+    </footer>
+
+    <script src="/index.4d6bcbeb.js" defer=""></script>
+</body>
+
+</html>
